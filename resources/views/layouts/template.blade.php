@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 	<title>Template</title>
 	<meta charset="utf-8">
@@ -76,23 +76,29 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="SCSS/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/common.css') }}">
 </head>
 <body style="font-family: 'Lato', sans-serif;'">
 
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">Nosotros</a>
-  <a href="#">Servicios</a>
-  <a href="#ubicacion">Ubicación</a>
-  <a href="#">Contacto</a>
+  <a href="#" onclick="closeNav()">Nosotros</a>
+  <a href="#" onclick="closeNav()">Servicios</a>
+  <a href="#ubicacion" onclick="closeNav()">Ubicación</a>
+  <a href="#" onclick="closeNav()">Contacto</a>
 </div>
 
 <div id="main">
   <button class="openbtn" onclick="openNav()">☰</button>
 </div>
-
 @yield('title')
+@yield('subtitle')
+<section class="home">
+	<div class="in-flex">
+		@yield('main')
+	</div>
+</section>
+
 <div style="font-size: medium; margin: 15px">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -114,8 +120,9 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </div>
 <script type="text/javascript" src="js/index.js"></script>
-<div style="color: white; background: black;">
-	<div id='ubicacion' style="vertical-align: center; margin: 5px;">
+
+<div class="footer" style="color: white; background: black;">
+    <div id='ubicacion' style="vertical-align: center; margin: 5px;">
 		<h5 style="margin: 5px;">Ubicación</h5>
 		<iframe width="250" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=buenos%20aires&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 	</div>

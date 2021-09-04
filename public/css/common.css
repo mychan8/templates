@@ -1,0 +1,26 @@
+@font-face {
+	font-family: Crimson;
+	src: url('font/Crimson-Bold.ttf');
+}
+
+* { padding: 0px; margin: 0px; font-family: Crimson; }
+h1, h2, h3, h4 { text-align: center; }
+input { text-align: center;  margin: 0; padding: 5px 5px; border-radius: 5px; width:25%; max-width: 900px; }
+a:link { color: white; text-decoration: none; } a:visited { text-decoration: none; } a:hover { color: red; text-decoration: none; } a:active { text-decoration: none; }
+
+.header { padding: 20px; color: white; font-size: x-large;}
+.header p {text-align: center; }
+.footer { padding: 15px; position: relative; }
+
+/* RESPONSIVE */
+.home { display: flex; flex-wrap: wrap; text-align: center;}
+.in-flex { flex: 1; min-width: 300px; }
+.in-flex:first-child { flex: 2; margin: 0; }
+.in-flex div { padding: 5px; margin: 5px; color: white; }
+.in-flex h4 { font-size: x-small; }
+
+#btn:hover { cursor: pointer; }
+
+.center { vertical-align: center; text-align: center; -webkit-box-sizing:border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.border { border: 1px outset white; margin-left: 2.5%; margin-right: 2.5%; padding: 6px; margin-bottom: 1em; background: linear-gradient( rgba(34,1,34,0.7), rgba(34,1,34,0.7) ); box-shadow: 0px 0px 7px 1px #888888;  }
+
