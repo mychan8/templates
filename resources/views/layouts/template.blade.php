@@ -4,7 +4,6 @@
 	<title>Template</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
 	<!-----
 	<meta name="description" content="">
     <meta name="keywords"  content="">
@@ -77,8 +76,9 @@
 	<link rel="stylesheet" type="text/css" href="SCSS/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/common.css') }}">
+    <link rel="preload" href="{{ URL::asset('img/background.jpeg') }}">
 </head>
-<body style="font-family: 'Lato', sans-serif;'">
+<body style="background-color: black">
 
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -91,15 +91,20 @@
 <div id="main">
   <button class="openbtn" onclick="openNav()">☰</button>
 </div>
+
 @yield('title')
 @yield('subtitle')
-<section class="home">
-	<div class="in-flex">
-		@yield('main')
+<main style="background-image: url({{ URL::asset('img/background.jpeg') }});">
+	<div style="margin: 15px; padding: 5px;">
+		<div class="cards">
+			@yield('main')
+			@yield('main')
+			@yield('main')
+		</div>
 	</div>
-</section>
+</main>
 
-<div style="font-size: medium; margin: 15px">
+<div style="font-size: medium; margin: 15px; color: white;">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -121,7 +126,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </div>
 <script type="text/javascript" src="js/index.js"></script>
 
-<div class="footer" style="color: white; background: black;">
+<div class="footer" style="color: white; background: #FFF1;">
     <div id='ubicacion' style="vertical-align: center; margin: 5px;">
 		<h5 style="margin: 5px;">Ubicación</h5>
 		<iframe width="250" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=buenos%20aires&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
