@@ -82,10 +82,10 @@
 
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#" onclick="closeNav()">Nosotros</a>
-  <a href="#" onclick="closeNav()">Servicios</a>
-  <a href="#ubicacion" onclick="closeNav()">Ubicación</a>
-  <a href="#" onclick="closeNav()">Contacto</a>
+  <a href="#nosotros" onclick="closeNav()">Nosotros</a>
+  <a href="#menus" onclick="closeNav()">Menús</a>
+  <a href="{{ URL::asset('menu') }}" onclick="closeNav()">Precios</a>
+  <a href="#contacto" onclick="closeNav()">Contacto</a>
 </div>
 
 <div id="main">
@@ -94,40 +94,26 @@
 
 @yield('title')
 @yield('subtitle')
-<main style="background-image: url({{ URL::asset('img/background.jpeg') }});">
+<main style="background-image: url({{ URL::asset('img/background.jpeg') }});" id="menus">
 	<div style="margin: 15px; padding: 5px;">
 		<div class="cards">
-			@yield('main')
-			@yield('main')
 			@yield('main')
 		</div>
 	</div>
 </main>
 
-<div style="font-size: medium; margin: 15px; color: white;">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<div class="faq" id="nosotros">
+	<h3>¿Hacen envíos?</h3>
+	<p>¡Claro, la magia es que son riquísimas y te llegan a la puerta de tu casa!<br>Hacemos envíos a CABA, zona norte y gran parte del conurbano</p>
+	<h3>¿Las viandas son frescas?</h3>
+	<p>¡Si, todas nuestras viandas se elaboran a pedido y llegan a tu casa frescas, listas para freezar!</p>
+	<h3>¿Ayudan a bajar de peso?</h3>
+	<p>Nuestro <a href="{{ URL::asset('menu/sin-harinas') }}">Menú Sin Harinas</a> y <a href="menu/economy">ECONOMY</a> está pensado para quienes bajar de peso rápido comiendo sano</p>
 </div>
 <script type="text/javascript" src="js/index.js"></script>
 
 <div class="footer" style="color: white; background: #FFF1;">
-    <div id='ubicacion' style="vertical-align: center; margin: 5px;">
+    <div id='contacto' style="vertical-align: center; margin: 5px;">
 		<h5 style="margin: 5px;">Ubicación</h5>
 		<iframe width="250" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=buenos%20aires&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 	</div>

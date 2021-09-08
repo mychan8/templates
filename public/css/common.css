@@ -21,6 +21,7 @@ a:visited { color: white; } a:hover { color: red; text-decoration: none; } a:act
 
 #btn:hover { cursor: pointer; }
 
+.faq { text-align: center; font-size: large; margin: 20px; color: white; padding: 20px; }
 .center { vertical-align: center; text-align: center; -webkit-box-sizing:border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .border { border: 1px outset white; margin-left: 2.5%; margin-right: 2.5%; padding: 6px; margin-bottom: 1em; background: linear-gradient( rgba(34,1,34,0.7), rgba(34,1,34,0.7) ); box-shadow: 0px 0px 7px 1px #888888; }
 
