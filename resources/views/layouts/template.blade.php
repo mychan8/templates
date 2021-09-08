@@ -72,9 +72,6 @@
 		  .sidebar a {font-size: 18px;}
 		}
 	</style>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="SCSS/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/common.css') }}">
     <link rel="preload" href="{{ URL::asset('img/background.jpeg') }}">
 </head>
@@ -101,22 +98,27 @@
 		</div>
 	</div>
 </main>
-
 <div class="faq" id="nosotros">
-	<h3>¿Hacen envíos?</h3>
-	<p>¡Claro, la magia es que son riquísimas y te llegan a la puerta de tu casa!<br>Hacemos envíos a CABA, zona norte y gran parte del conurbano</p>
-	<h3>¿Las viandas son frescas?</h3>
-	<p>¡Si, todas nuestras viandas se elaboran a pedido y llegan a tu casa frescas, listas para freezar!</p>
-	<h3>¿Ayudan a bajar de peso?</h3>
-	<p>Nuestro <a href="{{ URL::asset('menu/sin-harinas') }}">Menú Sin Harinas</a> y <a href="menu/economy">ECONOMY</a> está pensado para quienes bajar de peso rápido comiendo sano</p>
+	<div class="faq-text">
+		<h3>¿Hacen envíos?</h3>
+		<p>¡Claro, la magia es que son riquísimas y te llegan a la puerta de tu casa!<br>Hacemos envíos a CABA, zona norte y gran parte del conurbano</p>
+	</div>
+	<div class="faq-text">
+		<h3>¿Las viandas son frescas?</h3>
+		<p>¡Si, todas nuestras viandas se elaboran a pedido y llegan a tu casa frescas, listas para freezar!</p>
+	</div>
+	<div class="faq-text">
+		<h3>¿Ayudan a bajar de peso?</h3>
+		<p>Nuestro <a href="{{ URL::asset('menu/sin-harinas') }}">Menú Sin Harinas</a> y <a href="menu/economy">ECONOMY</a> está pensado para quienes bajar de peso rápido comiendo sano</p>
+	</div>
 </div>
 <script type="text/javascript" src="js/index.js"></script>
 
-<div class="footer" style="color: white; background: #FFF1;">
+<footer>
     <div id='contacto' style="vertical-align: center; margin: 5px;">
 		<h5 style="margin: 5px;">Ubicación</h5>
 		<iframe width="250" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=buenos%20aires&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 	</div>
-</div>
+</footer>
 </body>
 </html> 

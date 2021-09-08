@@ -22,7 +22,7 @@
 <div class="flex-item">
 	<img class="post-image" src="{{ URL::asset('img/icon.webp') }}">
 	<p class="post-header"> <a href="#">Gourmet</a></p>
-	<p class="post-text">Los platos los elegís vos, para que comas equilibradamente, y te damos la opción de elegir 7 platos a base de carne, pollo o pescado (hasta 3 de cada uno, pero en un total de 7) y 7 a base de verduras, legumbres y hortalizas, tartas, o pastas.<br>Las viandas vienen en tres tamaños, 150 cal, 300 cal y Maxi no dieta.<br>Las viandas las recibís frescas recién elaboradas para frezar.</p>
+	<p class="post-text">Los platos los elegís vos, para que comas equilibradamente, y te damos la opción de elegir 7 platos a base de carne, pollo o pescado (hasta 3 de cada uno, pero en un total de 7) y 7 a base de verduras, legumbres y hortalizas, tartas, o pastas.<br>Las viandas vienen en tres tamaños, 150 cal, 300 cal.<br>Las viandas las recibís frescas recién elaboradas para frezar.</p>
 </div>
 <div class="flex-item">
 	<img class="post-image" src="{{ URL::asset('img/icon.webp') }}">
