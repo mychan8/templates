@@ -91,27 +91,11 @@
 
 @yield('title')
 @yield('subtitle')
-<main style="background-image: url({{ URL::asset('img/background.jpeg') }});" id="menus">
-	<div style="margin: 15px; padding: 5px;">
-		<div class="cards">
-			@yield('main')
-		</div>
-	</div>
+
+<main id="menus">
+	@yield('main')
 </main>
-<div class="faq" id="nosotros">
-	<div class="faq-text">
-		<h3>¿Hacen envíos?</h3>
-		<p>¡Claro, la magia es que son riquísimas y te llegan a la puerta de tu casa!<br>Hacemos envíos a CABA, zona norte y gran parte del conurbano</p>
-	</div>
-	<div class="faq-text">
-		<h3>¿Las viandas son frescas?</h3>
-		<p>¡Si, todas nuestras viandas se elaboran a pedido y llegan a tu casa frescas, listas para freezar!</p>
-	</div>
-	<div class="faq-text">
-		<h3>¿Ayudan a bajar de peso?</h3>
-		<p>Nuestro <a href="{{ URL::asset('menu/sin-harinas') }}">Menú Sin Harinas</a> y <a href="menu/economy">ECONOMY</a> está pensado para quienes bajar de peso rápido comiendo sano</p>
-	</div>
-</div>
+
 <script type="text/javascript" src="js/index.js"></script>
 
 <footer>

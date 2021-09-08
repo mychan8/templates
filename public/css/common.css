@@ -16,7 +16,7 @@ footer { padding: 15px; position: relative; color: white; background: #FFF1; }
 
 #btn:hover { cursor: pointer; }
 
-.faq { padding: 5px; margin: 20px; -ms-box-orient: horizontal; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -moz-flex; display: -webkit-flex; display: flex; -webkit-flex-flow: wrap row; flex-flow: wrap row; justify-content: space-between; color: white; }
+.faq { padding: 5px; margin: 20px; -ms-box-orient: horizontal; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -moz-flex; display: -webkit-flex; display: flex; -webkit-flex-flow: wrap row; flex-flow: wrap row; justify-content: space-between; color: white; background: rgba(10, 10, 10, 0.8); }
 /* max-width: 350px; height: 300px; display: flex; flex-flow: row wrap;  text-align: center; font-size: large; margin: 20px; padding: 20px; */
 .faq-text { outline-color: white; outline-style: outset; padding: 20px; max-width: 300px; max-height: 200px; margin: 15px; }
 .faq-text p { background-color: white; color: black; margin: 5px; padding: 5px; outline: none; border: none; border-radius: 5px;}
