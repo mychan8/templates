@@ -3,27 +3,30 @@ h1, h2, h3, h4 { text-align: center; }
 input { text-align: center;  margin: 0; padding: 5px 5px; border-radius: 5px; width:25%; max-width: 900px; }
 a:visited { color: white; } a:hover { color: red; text-decoration: none; } a:active { text-decoration: none; }
 body { background-image: linear-gradient(to bottom, black, #100c08) }
-footer { text-align: center; position: relative; color: white; background-image: linear-gradient(to bottom, #100c08, black ); padding: 20px;}
+
+footer { text-align: center; position: relative; color: white; background-image: linear-gradient(to bottom, #100c08, black ); }
+footer a { color: red; }
+footer a:active {color: red;}
+footer a:hover { color: yellow; }
 
 .header { padding: 20px; color: white; font-size: x-large;}
 .header p {text-align: center; }
 
 .faq { padding: 5px; margin: 20px; -ms-box-orient: horizontal; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -moz-flex; display: -webkit-flex; display: flex; -webkit-flex-flow: wrap row; flex-flow: wrap row; justify-content: space-between; color: white; background: #080808; }
-.faq-text { outline-color: white; outline-style: outset; padding: 20px; max-width: 300px; max-height: 200px; margin: 15px; }
-.faq-text p { background-color: white; color: black; margin: 5px; padding: 5px; outline: none; border: none; border-radius: 5px;}
+.faq-text { outline-color: white; outline-style: outset; padding: 20px; max-width: 350px; max-height: 250px; margin: 15px; }
+.faq-text p { background-color: white; color: black; margin: 5px; padding: 5px; outline: none; border: none; border-radius: 5px; max-width: 250px; max-height: 150px;}
 
-.news { max-width: 400px; height: 250px; margin: 15px; padding: 10px; outline-color: white; outline-style: outset; }
+.news { max-width: 300px; max-height: 500px margin: 10px; padding: 15px; outline-color: white; outline-style: outset; justify-content: space-between; }
 .center { vertical-align: center; text-align: center; -webkit-box-sizing:border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .border { border: 1px outset white; margin-left: 2.5%; margin-right: 2.5%; padding: 6px; margin-bottom: 1em; background: linear-gradient( rgba(34,1,34,0.7), rgba(34,1,34,0.7) ); box-shadow: 0px 0px 7px 1px #888888; }
 
-.cards {
-background: rgba(10, 10, 10, 0.8); color: black; display: flex; flex-flow: row wrap; justify-content: space-around; padding: 10px;margin: 10px; outline: none; border: none; border-radius: 15px; box-shadow: 5px 5px #161616;
-}
+.cards { background: rgba(10, 10, 10, 0.8); color: black; display: flex; flex-flow: row wrap; justify-content: space-around; padding: 10px;margin: 10px; outline: none; border: none; border-radius: 15px; box-shadow: 5px 5px #161616; }
+.cards img { width: 200px; height: 100px; }
 
 .flex-item {
 padding: 20px;
 max-width: 300px;
-height: 400px;
+max-height: 470px;
 margin: 5px;
 font-size: small;
 text-align: center;
