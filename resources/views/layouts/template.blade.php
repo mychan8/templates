@@ -84,6 +84,9 @@
   <a href="#menus" onclick="closeNav()">Menús</a>
   <a href="{{ URL::asset('menu') }}" onclick="closeNav()">Precios</a>
   <a href="#contacto" onclick="closeNav()">Contacto</a>
+  <br>
+  <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
+  <a href="https://www.instagram.com/viandaspop/"><i class="fa fa-instagram"></i> Instagram</a>
 </div>
 
 <div id="main">
@@ -95,6 +98,7 @@
 
 <div class="icon-bar">
   <a class="active" href="#"><img class="icon" src="{{ URL::asset('img/icon.webp') }}"></i></a>
+  <a class="active" href="https://www.instagram.com/viandaspop/"><img class="icon" src="{{ URL::asset('img/instagram.png') }}">
 </div>
 
 <main id="menus">
@@ -112,8 +116,7 @@
 			</div>
 
 			<div>
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>   ||   <a href="https://www.instagram.com/viandaspop/"><i class="fa fa-instagram"></i></a>
 			</div>
 		</div>
 		
@@ -134,7 +137,7 @@
 
 		<div class="column">
 		    <div class="map">
-				<iframe width="250" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=buenos%20aires&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				<iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=buenos%20aires&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 			</div>
 		</div>
 

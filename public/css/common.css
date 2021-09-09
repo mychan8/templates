@@ -3,8 +3,9 @@ h1, h2, h3, h4 { text-align: center; }
 input { text-align: center;  margin: 0; padding: 5px 5px; border-radius: 5px; width:25%; max-width: 900px; }
 a:visited { color: white; } a:hover { color: red; text-decoration: none; } a:active { text-decoration: none; }
 body { background-image: linear-gradient(to bottom, black, #100c08) }
+iframe { max-width: 350px; }
 
-footer { text-align: center; position: relative; color: white; background-image: linear-gradient(to bottom, #100c08, black ); }
+footer { text-align: center; position: relative; color: white; background-image: linear-gradient(to bottom, #100c07, black ); border-top: 1px solid #100a00 }
 footer a { color: red; }
 footer a:active {color: red;}
 footer a:hover { color: yellow; }
@@ -13,8 +14,8 @@ footer a:hover { color: yellow; }
 .header p {text-align: center; }
 
 .faq { padding: 5px; margin: 20px; -ms-box-orient: horizontal; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -moz-flex; display: -webkit-flex; display: flex; -webkit-flex-flow: wrap row; flex-flow: wrap row; justify-content: space-between; color: white; background: #080808; }
-.faq-text { outline-color: white; outline-style: outset; padding: 20px; max-width: 350px; max-height: 250px; margin: 15px; }
-.faq-text p { background-color: white; color: black; margin: 5px; padding: 5px; outline: none; border: none; border-radius: 5px; max-width: 250px; max-height: 150px;}
+.faq-text { outline-color: white; outline-style: outset; padding: 20px; max-width: 350px; max-height: 250px; margin: 10px; }
+.faq-text p { background-color: white; color: black; margin: 5px; padding: 5px; outline: none; border: none; border-radius: 5px; max-width: 250px; max-height: 200px;}
 
 .news { max-width: 300px; max-height: 500px margin: 10px; padding: 15px; outline-color: white; outline-style: outset; justify-content: space-between; }
 .center { vertical-align: center; text-align: center; -webkit-box-sizing:border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -54,11 +55,11 @@ box-shadow: 0 9px #999;
 .author a { text-decoration: none; }
 
 /* ICON FIXED */
-.icon { margin: 0; padding: 0; width: 50px; }
+.icon { margin: 0; padding: 0; width: 50px; height: 50px;}
 
 .icon-bar {
 opacity: 0.5;
-margin: 10px;
+margin: 5px;
 overflow: hidden;
 position: fixed;
 width: 80px;
@@ -69,7 +70,7 @@ bottom: 0;
 display: block;
 float: left;
 text-align: center;
-padding: 16px;
+padding: 8px;
 transition: all 0.3s ease;
 color: white;
 font-size: 36px;
@@ -81,4 +82,4 @@ font-size: 36px;
 .flex p { margin: 10px; }
 .column { flex-flow: column; padding: 15px; margin: 5px; text-align: center; max-width: 300px; max-height: 300px; }
 .border-top { text-align: center; font-size: x-large; color: white; border-top: double; padding: 15px; }
-.map { vertical-align: right; margin: 10px; }
+.map { vertical-align: right; margin: 5px; }
