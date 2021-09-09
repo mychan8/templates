@@ -1,9 +1,9 @@
 @extends('layouts.template')
 
 @section('title')
-	<div style="text-align: center; margin-bottom: 15px;">
+	<div style="text-align: center; margin-bottom: 15px; color: white;">
 		<h5 style="color: gray;">¡Bienvenidos a</h5>
-		<h1 style="color: red;">Viandas Pop!</h1>
+		<h1>Viandas<span style="color: red">Pop!</h1>
 	</div>
 @endsection
 
@@ -38,19 +38,29 @@
 		</div>
 	</div>
 </div>
+<!--- FAQS ULTIMAS NOTICIAS ---->
+<div class="flex">
+	<h3 class="border-top">Preguntas frecuentes</h3>
+	<div class="faq" id="nosotros">
+		<div class="faq-text">
+			<h3>¿Hacen envíos?</h3>
+			<p>¡Claro, la magia es que son riquísimas y te llegan a la puerta de tu casa!<br>Hacemos envíos a CABA, zona norte y gran parte del conurbano</p>
+		</div>
+		<div class="faq-text">
+			<h3>¿Las viandas son frescas?</h3>
+			<p>¡Si, todas nuestras viandas se elaboran a pedido y llegan a tu casa frescas, listas para freezar!</p>
+		</div>
+		<div class="faq-text">
+			<h3>¿Ayudan a bajar de peso?</h3>
+			<p>Nuestro <a href="{{ URL::asset('menu/sin-harinas') }}">Menú Sin Harinas</a> y <a href="menu/economy">ECONOMY</a> está pensado para quienes bajar de peso rápido comiendo sano</p>
+		</div>
+	</div>
 
-<div class="faq" id="nosotros">
-	<div class="faq-text">
-		<h3>¿Hacen envíos?</h3>
-		<p>¡Claro, la magia es que son riquísimas y te llegan a la puerta de tu casa!<br>Hacemos envíos a CABA, zona norte y gran parte del conurbano</p>
-	</div>
-	<div class="faq-text">
-		<h3>¿Las viandas son frescas?</h3>
-		<p>¡Si, todas nuestras viandas se elaboran a pedido y llegan a tu casa frescas, listas para freezar!</p>
-	</div>
-	<div class="faq-text">
-		<h3>¿Ayudan a bajar de peso?</h3>
-		<p>Nuestro <a href="{{ URL::asset('menu/sin-harinas') }}">Menú Sin Harinas</a> y <a href="menu/economy">ECONOMY</a> está pensado para quienes bajar de peso rápido comiendo sano</p>
+	<h3 class="border-top">Últimas noticias</h3>
+	<div class="faq">
+		<div class="news">
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+		</div>
 	</div>
 </div>
 @endsection

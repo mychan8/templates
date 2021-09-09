@@ -29,7 +29,7 @@
 		  font-size: 25px;
 		  color: #818181;
 		  display: block;
-		  transition: 0.3s;
+		  transition: 0.2s;
 		}
 
 		/* When you mouse over the navigation links, change their color */
@@ -74,8 +74,9 @@
 	</style>
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/common.css') }}">
     <link rel="preload" href="{{ URL::asset('img/background.jpeg') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body style="background-color: black">
+<body style=";">
 
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -92,17 +93,53 @@
 @yield('title')
 @yield('subtitle')
 
+<div class="icon-bar">
+  <a class="active" href="#"><img class="icon" src="{{ URL::asset('img/icon.webp') }}"></i></a>
+</div>
+
 <main id="menus">
 	@yield('main')
 </main>
 
 <script type="text/javascript" src="js/index.js"></script>
 
-<footer>
-    <div id='contacto' style="vertical-align: center; margin: 5px;">
-		<h5 style="margin: 5px;">Ubicación</h5>
-		<iframe width="250" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=buenos%20aires&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+<footer id="contacto">
+	<!--- LOGO REDES SOCIALES --->
+	<div class="flex">
+		<div class="column">
+			<div>
+				<h2>Viandas<span style="color: red">Pop</span>!</h2>
+			</div>
+
+			<div>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+			</div>
+		</div>
+		
+		<!--- ABOUT CONTACTO --->
+
+		<div class="column">
+			<p class="company-about">
+			<h3>Nosotros</h3>
+			Realizamos viandas a domicilio euismod convallis velit, eu auctor lacus vehicula sit amet.</p>
+
+			<div>
+				<p><i class="fa fa-envelope"></i> <a href="mailto:pedidosviandaspop@gmail.com">pedidosviandaspop</a></p>
+				<p><i class="fa fa-map-marker"></i> <span>Av. Rivadavia</span> Buenos Aires, Argentina</p>
+			</div>
+		</div>
+
+	<!--- UBICACION MAPA --->
+
+		<div class="column">
+		    <div class="map">
+				<iframe width="250" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=buenos%20aires&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			</div>
+		</div>
+
 	</div>
+
 </footer>
 </body>
 </html> 
