@@ -83,3 +83,28 @@ font-size: 36px;
 .column { flex-flow: column; padding: 15px; margin: 5px; text-align: center; max-width: 300px; max-height: 300px; }
 .border-top { text-align: center; font-size: x-large; color: white; border-top: double; padding: 15px; }
 .map { vertical-align: right; margin: 5px; }
+
+.title h1 {
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}

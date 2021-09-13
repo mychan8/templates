@@ -73,7 +73,31 @@
 		}
 	</style>
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/common.css') }}">
-    <link rel="preload" href="{{ URL::asset('img/background.jpeg') }}">
+    <link rel="preload" href="https://maps.google.com/maps?q=buenos%20aires&t=&z=13&ie=UTF8&iwloc=&output=embed">
+    <script type="text/javascript">
+		var preload = new Array();
+
+		preload[0] = "{{ URL::asset('img/gourmet.webp') }}";
+		preload[1] = "{{ URL::asset('img/sin-harina.webp') }}";
+		preload[2] = "{{ URL::asset('img/veggie.webp') }}";
+		preload[3] = "{{ URL::asset('img/icon.webp') }}";
+		preload[4] = "{{ URL::asset('img/3600.webp') }}";
+		preload[5] = "{{ URL::asset('img/instagram.png') }}";
+		preload[6] = "{{ URL::asset('img/icon.webp') }}";
+		preload[7] = "{{ URL::asset('img/background.jpeg') }}";
+		preload[8] = "{{ URL::asset('img/text-fill.png') }}";
+		preload[8] = "{{ URL::asset('img/economy-har.webp') }}";
+		preload[8] = "{{ URL::asset('img/4600.webp') }}";
+
+		// Leave the next 5 lines as they are.
+		var loadedimages = new Array();
+		for(var i=0; i<preload.length; i++) {
+		loadedimages[i] = new Image();
+		loadedimages[i].src = preload[i];
+		}
+	</script>
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body style=";">
@@ -98,7 +122,7 @@
 
 <div class="icon-bar">
   <a class="active" href="#"><img class="icon" src="{{ URL::asset('img/icon.webp') }}"></i></a>
-  <a class="active" href="https://www.instagram.com/viandaspop/"><img class="icon" src="{{ URL::asset('img/instagram.png') }}">
+  <a class="active" href="https://www.instagram.com/viandaspop/"><img class="icon" src="{{ URL::asset('img/instagram.png') }}"></a>
 </div>
 
 <main id="menus">
@@ -133,14 +157,12 @@
 			</div>
 		</div>
 
-	<!--- UBICACION MAPA --->
-
+	<!--- MAPA --->
 		<div class="column">
 		    <div class="map">
 				<iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=buenos%20aires&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 			</div>
 		</div>
-
 	</div>
 
 </footer>

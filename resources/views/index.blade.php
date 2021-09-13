@@ -1,9 +1,9 @@
 @extends('layouts.template')
 
 @section('title')
-	<div style="text-align: center; margin-bottom: 15px; color: white;">
+	<div style="text-align: center; margin-bottom: 15px; color: white;" class="title">
 		<h5 style="color: gray;">¡Bienvenidos a</h5>
-		<h1>Viandas<span style="color: red">Pop!</h1>
+		<h1 style="background: url('img/text-fill.png') repeat-y; -webkit-background-clip: text;background-clip: text;">ViandasPop!</h1>
 	</div>
 @endsection
 
@@ -14,7 +14,7 @@
 @endsection
 
 @section('main')
-<div style="margin: 15px; padding: 5px; background-image: url({{ URL::asset('img/background.jpeg') }});">
+<div style="margin: 15px; padding: 5px; background: url('{{ URL::asset('img/background.jpeg') }}');">
 	<div class="cards">
 		<div class="flex-item">
 			<img class="post-image" src="{{ URL::asset('img/sin-harina.webp') }}">
@@ -48,6 +48,25 @@
 		</div>
 	</div>
 </div>
+<marquee behavior="alternate">
+	<div style=" display: flex; flex-flow: row wrap;">
+		<div style="padding: 10px; margin: 5px;">
+			<a href="#"><img src="{{ URL::asset('img/3600.webp') }}"><p style="background-color: white; color: black; text-align: center;">14 viandas de 150 cal</p></a>
+		</div>
+
+		<div style="padding: 10px; margin: 5px;">
+			<a href="#"><img src="{{ URL::asset('img/4600.webp') }}"><p style="background-color: white; color: black; text-align: center;">14 viandas de 300 cal</p></a>
+		</div>
+
+		<div style="padding: 10px; margin: 5px;">
+			<a href="#"><img src="{{ URL::asset('img/economy-har.webp') }}"><p style="background-color: white; color: black; text-align: center;">10 viandas de 300 cal</p></a>
+		</div>
+
+		<div style="padding: 10px; margin: 5px;">
+			<img src="{{ URL::asset('img/3600.webp') }}"><p style="background-color: white; color: black; text-align: center;">14 viandas de 150 cal</p>
+		</div>
+	</div>
+</marquee>
 <!--- FAQS ULTIMAS NOTICIAS ---->
 <div class="flex">
 	<div>
