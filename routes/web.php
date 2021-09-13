@@ -15,3 +15,10 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
+
+Route::get('dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
+
+/* Inicio de sesión */
+Route::post('dashboard', [HomeController::class, 'login'])->name('login');
+
+Route::get('logout', [HomeController::class, 'logout'])->name('logout');

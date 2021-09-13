@@ -1,17 +1,10 @@
 @extends('layouts.template')
 
-@section('title')
-	<div style="text-align: center; margin-bottom: 15px; color: white;" class="title">
-		<h5 style="color: gray;">¡Bienvenidos a</h5>
-		<h1 style="background: url('img/text-fill.png') repeat-y; -webkit-background-clip: text;background-clip: text;">ViandasPop!</h1>
-	</div>
+@section('pretitle')
+	<h5 style="color: gray;">¡Bienvenidos a</h5>
 @endsection
 
-@section('subtitle')
-	<div style="text-align: center; color: white;">
-		<h3 style="margin-bottom: 20px;">¡Viandas saludables, ricas, frescas y listas para freezar!</h3>
-	</div>
-@endsection
+@section('subtitle', "¡Viandas saludables, ricas, frescas y listas para freezar!")
 
 @section('main')
 <div style="margin: 15px; padding: 5px; background: url('{{ URL::asset('img/background.jpeg') }}');">

@@ -96,8 +96,6 @@
 		loadedimages[i].src = preload[i];
 		}
 	</script>
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body style=";">
@@ -111,14 +109,22 @@
   <br>
   <a href="#"><i class="fa fa-facebook"></i> Facebook</a>
   <a href="https://www.instagram.com/viandaspop/"><i class="fa fa-instagram"></i> Instagram</a>
+  <a href="{{ URL::asset('dashboard') }}" class="fa fa-id-card"> Panel de control</a>
 </div>
 
 <div id="main">
   <button class="openbtn" onclick="openNav()">☰</button>
 </div>
 
-@yield('title')
-@yield('subtitle')
+
+<div style="text-align: center; margin-bottom: 15px; color: white;" class="title">
+	@yield('pretitle')
+	<h1 style="background: url('img/text-fill.png') repeat-x; -webkit-background-clip: text;background-clip: text;">ViandasPop!</h1>
+</div>
+
+<div style="text-align: center; color: white;">
+	<h3 style="margin-bottom: 20px;">@yield('subtitle')</h3>
+</div>
 
 <div class="icon-bar">
   <a class="active" href="#"><img class="icon" src="{{ URL::asset('img/icon.webp') }}"></i></a>
